@@ -13,5 +13,6 @@ Your application is available at http://$APP_IP
 ********************************************
 
 "
+export PHPEPL_PROD=1
 tail -F /var/log/apache2/* &
 exec apache2ctl -D FOREGROUND

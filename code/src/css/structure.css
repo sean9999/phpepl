@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+body {
+	background-color: #DEF;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+#container {
+	height: calc(100% - 110px);
+	position: relative;
+}
+
+header {
+	background-image: url('/images/smile.png');
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 10px -40px;
+	background-size: 250px;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+header, footer {
+	display: block;
+	height: 55px;
+}
+
+section, nav, output {
+
+}
+
+section, nav, output, header, footer, .CodeMirror {
+	margin: 0;
+	padding: 0;
+}
+
+#container > nav {
+	background-color: #ccccff;
+	width: 100px;
+	float: left;
+	display: none;
+ }
+
+#container > section {
+	background-color: #dddd88;
+	float: left;
+	width: 49%;
+	height: 100%;
+}
+
+.movingwall {
+	width: 7px;
+	float: left;
+	background-color: black;
+	cursor: col-resize;
+	height: 100%;
+}
+
+#container > section form, #container > section textarea,  {
+	height: 100%;
+	width: 100%;
+}
+
+#container > output {
+	padding: .1em 1em;
+	float: left;
+	width: auto;
+	height: 100%;
+}
+
+@media all and (max-width: 640px) {
+	/* Too narrow to support three columns */
+	#container, #page {
+		flex-direction: column;
+	}
+	#container > section, #container > nav, #container > output {
+		/* Return them to document order */
+		order: 0;
+	}
+	#container > nav, #container > output, header, footer {
+		min-height: 50px;
+		max-height: 50px;
+	}
+}

@@ -1,6 +1,7 @@
 {
     "minimum-stability": "dev",
     "require": {
-        "fieryprophet/php-sandbox": "dev-master"
+	"fieryprophet/php-sandbox": "dev-master",
+	"pdepend/pdepend": "dev-master"
     }
 }

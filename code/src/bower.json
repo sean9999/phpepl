@@ -1,0 +1,25 @@
+{
+  "name": "php7 REPL",
+  "version": "3.3.1",
+  "homepage": "https://github.com/sean9999/phpepl",
+  "authors": [
+    "Sean Macdonald <sean@crazyhorsecoding.com>"
+  ],
+  "description": "A REPL for PHP7",
+  "main": "index.html",
+  "keywords": [
+    "php7",
+    "repl"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "codemirror": "~5.4.0"
+  }
+}

@@ -16,6 +16,12 @@ RUN echo "\n<FilesMatch \\.php$>\nSetHandler application/x-httpd-php\n</FilesMat
 RUN a2dismod mpm_event && a2enmod mpm_prefork && a2enmod php7 && a2enmod rewrite
 RUN a2dissite 000-default && a2ensite php7
 
+#	front-end dev
+RUN apt-get install --yes git nodejs npm \
+	&& npm install -g bower webpack \
+	&& cd /var/www/public \
+	&& bower install --save Polymer/polymer#^1.0.0
+
 #	PHP REPL
 RUN mkdir -p /var/www/public
 ADD code/src/ /var/www/public

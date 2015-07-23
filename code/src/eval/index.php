@@ -34,7 +34,9 @@
 		// http://stackoverflow.com/a/2146171/700897
 		$result = ob_get_clean();
 		$error = error_get_last();
-
+		if (!empty($error['message'])) {
+			$error['msg'] = array_shift(explode(' in '.__FILE__, $error['message']));
+		}
 		echo json_encode(array("result" => $result, "error" => $error));
 	}
 
@@ -96,7 +98,6 @@
 
 		$sandbox->execute($code);
 	}
-
 	function php_execute_raw($code) {
 		eval($code);
 	}
