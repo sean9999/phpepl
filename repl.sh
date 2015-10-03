@@ -11,7 +11,6 @@ PHP 7 is ready for use
 Your application is available at http://$APP_IP
 
 ********************************************
-
 "
 export PHPEPL_PROD=1
 tail -F /var/log/apache2/* &

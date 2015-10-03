@@ -419,13 +419,13 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 287.0,
-		"last_filter": "",
+		"height": 392.0,
+		"last_filter": "pack",
 		"selected_items":
 		[
 			[
 				"pack",
-				"Package Control: Install Package"
+				"Package Control: Remove Package"
 			],
 			[
 				"package",
@@ -440,7 +440,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -461,32 +461,28 @@
 	"expanded_folders":
 	[
 		"/Users/seanmacdonald/REPOS/phpepl",
-		"/Users/seanmacdonald/REPOS/phpepl/code",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/bower_components/codemirror/addon",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/bower_components/codemirror/mode/htmlmixed",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/bower_components/codemirror/mode/xml",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/css",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/eval",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/js",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/js/vendor/ace",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/js/vendor/ace/snippets",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/vendor/fieryprophet",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/vendor/fieryprophet/php-sandbox"
+		"/Users/seanmacdonald/REPOS/docker-php7-nightly-build/www",
+		"/Users/seanmacdonald/REPOS/docker-php7-nightly-build/www/public"
 	],
 	"file_history":
 	[
+		"/Users/seanmacdonald/REPOS/phpepl/Dockerfile",
+		"/Users/seanmacdonald/REPOS/phpepl/.dockerignore",
+		"/Users/seanmacdonald/REPOS/phpepl/code/src/js/repl.js",
+		"/Users/seanmacdonald/REPOS/phpepl/.gitignore",
+		"/Users/seanmacdonald/.dotfiles/.git/COMMIT_EDITMSG",
+		"/Users/seanmacdonald/.dotfiles/available/functions",
+		"/Users/seanmacdonald/.dotfiles/.git/MERGE_MSG",
+		"/Users/seanmacdonald/REPOS/phpepl/repl.sh",
+		"/Users/seanmacdonald/REPOS/phpepl/code/src/js/editor.js",
 		"/Users/seanmacdonald/REPOS/phpepl/code/src/css/structure.css",
 		"/Users/seanmacdonald/REPOS/phpepl/code/src/index.html",
-		"/Users/seanmacdonald/REPOS/phpepl/code/src/js/repl.js",
-		"/Users/seanmacdonald/REPOS/phpepl/repl.sh",
 		"/Users/seanmacdonald/REPOS/phpepl/code/src/eval/index.php",
 		"/Users/seanmacdonald/REPOS/phpepl/code/src/css/typo.css",
 		"/Users/seanmacdonald/REPOS/phpepl/code/src/css/normalize.css",
 		"/Users/seanmacdonald/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/seanmacdonald/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/seanmacdonald/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
-		"/Users/seanmacdonald/REPOS/phpepl/Dockerfile",
 		"/Users/seanmacdonald/REPOS/phpepl/code/src/js/phprepl.dist.js",
 		"/Users/seanmacdonald/REPOS/phpepl/code/src/js/phprelp.dist.js.map",
 		"/Users/seanmacdonald/REPOS/phpepl/webpack.config.js",
@@ -496,9 +492,7 @@
 		"/Users/seanmacdonald/REPOS/phpepl/Gruntfile.js",
 		"/Users/seanmacdonald/REPOS/phpepl/rundoc.sh",
 		"/Users/seanmacdonald/REPOS/phpepl/build.sh",
-		"/Users/seanmacdonald/REPOS/phpepl/.gitignore",
 		"/Users/seanmacdonald/REPOS/phpepl/public/index.html",
-		"/Users/seanmacdonald/REPOS/phpepl/.dockerignore",
 		"/Users/seanmacdonald/REPOS/beautiful-letter/templates/default.latex",
 		"/Users/seanmacdonald/REPOS/beautiful-letter/hf2.yml",
 		"/Users/seanmacdonald/REPOS/beautiful-letter/hf2.md",
@@ -599,11 +593,7 @@
 		"/Users/seanmacdonald/REPOS/numops/app/scripts/controllers/expensetypes.js",
 		"/Users/seanmacdonald/REPOS/numops/app/scripts/controllers/suppliers.js",
 		"/Users/seanmacdonald/REPOS/numops/app/scripts/services/producttypes.js",
-		"/Users/seanmacdonald/REPOS/numops/app/scripts/controllers/producttypes.js",
-		"/Users/seanmacdonald/REPOS/numops/app/scripts/controllers/containertypes.js",
-		"/Users/seanmacdonald/REPOS/numops/app/scripts/services/containertypes.js",
-		"/Users/seanmacdonald/REPOS/numops/app/scripts/controllers/units.js",
-		"/Users/seanmacdonald/REPOS/numops/app/scripts/services/schema.js"
+		"/Users/seanmacdonald/REPOS/numops/app/scripts/controllers/producttypes.js"
 	],
 	"find":
 	{
@@ -621,6 +611,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"code",
 			"php_ex",
 			"(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require==\"function\"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error(\"Cannot find module '\"+o+\"'\");throw f.code=\"MODULE_NOT_FOUND\",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require==\"function\"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){\n/**\n * An output console\n * @param {$} $element\n */\nfunction Console($element) {\n  this.$element = $element;\n  this.$output = this.$element.find('.output-container span');\n}\n\n/**\n * @param {String} text\n */\nConsole.prototype.setOutput = function(text) {\n  this.$output\n  .html(text)\n  .removeClass('error');\n};\n\n/**\n * @param {Object} error\n * @param {Number} error.line\n * @param {String} error.message\n */\nConsole.prototype.setError = function(error) {\n  var errorMsg;\n\n  if (error.line && error.message) {\n    // Show the error message\n    errorMsg = 'Line ' + error.line + ': ';\n  }\n\n  errorMsg += error.message;\n\n  this.setOutput(errorMsg);\n\n  this.$output.addClass('error');\n};\n\n/**\n * @param  {Boolean} state\n */\nConsole.prototype.toggleSpinner = function(state) {\n  var $spinner = this.$element.find('.spinner');\n\n  if (state) {\n    $spinner.fadeIn('fast');\n  } else {\n    $spinner.fadeOut('fast');\n  }\n};\n\nmodule.exports = Console;\n\n},{}],2:[function(require,module,exports){\nvar SessionStore = require('./sessionstore');\n\n/**\n * A code editor wrapper around the client-side text editor\n *\n * @param {String} selector - Dom element the editor should bind to\n */\nfunction Editor(selector) {\n  this.$element = $('#' + selector);\n\n  this._editor = window.ace.edit(selector);\n  this._editor.getSession().setMode({path: 'ace/mode/php', inline: true});\n  this._editor.getSession().setUseSoftTabs(true);\n  this._editor.getSession().setTabSize(2);\n\n  this._editor.$blockScrolling = Infinity;\n  this._editor.setShowPrintMargin(false);\n  this._editor.setOptions({\n    enableBasicAutocompletion: true,\n    enableSnippets: true,\n    enableLiveAutocompletion: false\n  });\n\n  this._sessionStore = new SessionStore();\n\n  this._defaultValue = 'echo \"We\\'re running php version: \" . phpversion();';\n}\n\n/**\n * @return {String}\n */\nEditor.prototype.getValue = function() {\n  return this._editor.getValue();\n};\n\n/**\n * @param {String} val\n */\nEditor.prototype.setValue = function(val) {\n  this._editor.setValue(val);\n};\n\n/**\n * Highlights the line in the gutter with the error\n *\n * @param  {Number} line\n */\nEditor.prototype.showLineError = function(line) {\n  this.$element\n  .find('.ace_gutter-cell:nth-child(' + line + ')')\n    .addClass('error-gutter');\n};\n\nEditor.prototype.clearLineErrors = function() {\n  this.$element.find('.ace_gutter-cell').removeClass('error-gutter');\n};\n\nEditor.prototype.saveSession = function() {\n  this._sessionStore.save(this.getValue());\n};\n\nEditor.prototype.loadPreviousSession = function() {\n  this.setValue(this._sessionStore.getPrevious());\n};\n\nEditor.prototype.loadNextSession = function() {\n  this.setValue(this._sessionStore.getNext());\n};\n\nEditor.prototype.loadLastSession = function() {\n  this.setValue(this.getLastSession() || this._defaultValue);\n};\n\n/**\n * Preload where you last left off\n * @return {String}\n */\nEditor.prototype.getLastSession = function() {\n  return this._sessionStore.getLast() || '';\n};\n\n/**\n * Process/Eval the code\n *\n * @param  {Object} options\n * @param  {Object} options.evalURL - Url to use for evaluation\n * @return {Deferred}\n */\nEditor.prototype.evaluateCode = function(options) {\n  var promise = $.ajax({\n    type:     'POST',\n    url:      options.evalURL,\n    data:     {code: this.getValue()},\n    dataType: 'json'\n  });\n\n  promise.then(function() {\n    this.saveSession();\n  }.bind(this));\n\n  return promise;\n};\n\nmodule.exports = Editor;\n\n},{\"./sessionstore\":8}],3:[function(require,module,exports){\n/**\n * Helper to show the fatal errors nicely\n *\n * @param  {String} responseText\n * @return {String} A list of the error text and line number that generated the error.\n */\nmodule.exports = function(responseText) {\n  if (!responseText.length) { return ''; }\n\n  var text = responseText;\n  var tokensToReplace = ['\\n', /<br \\/>/g, /<b>/g, /<\\/b>/g, /(Fatal error: +)/g];\n  var splitTokens;\n  var err;\n  var line;\n  var lineNum;\n\n  // If the error message doesn't contain 'fatal error',\n  // then just print it\n  if (!responseText.toLowerCase().indexOf('fatal error')) {\n    return [responseText, 1];\n  }\n\n  tokensToReplace.forEach(function(val) {\n    text = text.replace(val, '');\n  });\n\n  splitTokens = text.split('in');\n  err = splitTokens[0].trim();\n  splitTokens = text.split('on');\n  line = splitTokens[1].trim();\n\n  text = (err + ' on ' + line).trim();\n\n  lineNum = line.split(' ');\n  lineNum = Number(lineNum[1]);\n\n  return [text, lineNum];\n};\n\n},{}],4:[function(require,module,exports){\n// http://stackoverflow.com/a/1099670/700897\nmodule.exports = function(qs) {\n  qs = qs.split('+').join(' ');\n\n  var params = {};\n  var tokens;\n  var re = /[?&]?([^=]+)=([^&]*)/g;\n  var token1;\n\n  tokens = re.exec(qs);\n\n  while (tokens) {\n    token1 = decodeURIComponent(tokens[1]);\n    params[token1] = decodeURIComponent(tokens[2]);\n    tokens = re.exec(qs);\n  }\n\n  return params;\n};\n\n},{}],5:[function(require,module,exports){\n/**\n * Returns a pretty timestamp (only time)\n * @return {String}\n */\nmodule.exports = function() {\n  var now = new Date();\n  var time = [now.getHours(), now.getMinutes(), now.getSeconds()];\n  var suffix = time[0] < 12 ? 'AM' : 'PM';\n\n  // Convert hour from military time\n  time[0] = time[0] < 12 ? time[0] : time[0] - 12;\n\n  // If hour is 0, set it to 12\n  time[0] = time[0] || 12;\n\n  // If seconds and minutes are less than 10, add a zero\n  for (var i = 1; i < 3; i++) {\n    if (time[i] < 10) {\n      time[i] = '0' + time[i];\n    }\n  }\n\n  return time.join(':') + ' ' + suffix;\n};\n\n},{}],6:[function(require,module,exports){\n'use strict';\n\n/**\n * @param  {String} part\n * @return {Boolean}\n */\nmodule.exports.hostHas = function(part) {\n  return window.location.host.indexOf(part) !== -1;\n};\n\n/**\n * @return {Boolean}\n */\nmodule.exports.isLiveEnv = function() {\n  return this.hostHas('cloudcontrolled') || this.hostHas('herokuapp');\n};\n\n/**\n * @return {Boolean}\n */\nmodule.exports.onPHP5Version = function() {\n  return this.hostHas('herokuapp');\n};\n\n},{}],7:[function(require,module,exports){\n'use strict';\n\nvar Editor = require('./editor');\nvar Console = require('./console');\nvar Sidebar = require('./sidebar');\n\nvar getPrettyFatalErrorMessage = require('./lib/getPrettyFatalErrorMessage');\nvar getQueryParams = require('./lib/getQueryParams');\nvar timestamp = require('./lib/timestamp');\nvar utils = require('./lib/utils');\n\nvar editor = new Editor('editor');\nvar console = new Console($('.console'));\nvar sidebar = new Sidebar($('.sidebar'));\n\nvar mixpanel = window.mixpanel || {};\nvar evalURL = 'eval/index.php';\n\nvar code = getQueryParams(document.location.search).code;\nif (code) {\n  code = window.decodeURIComponent(code);\n  editor.setValue(code);\n  mixpanel.track('Visit Code Url', {code: code});\n\n} else {\n  editor.loadLastSession();\n  code = editor.getValue();\n}\n\nsidebar.shareCode(code);\n\nif (!utils.onPHP5Version() && utils.isLiveEnv()) {\n  $('.link-to-heroku').fadeIn('fast');\n}\n\n$(document).keydown(function(e) {\n  // CMD + Enter or CTRL + Enter to run code\n  if (e.which === 13 && (e.ctrlKey || e.metaKey)) {\n    processCode();\n    return false;\n  }\n\n  // CMD + S or CTRL + S to save code\n  if (e.which === 83 && (e.ctrlKey || e.metaKey)) {\n    editor.saveSession();\n    mixpanel.track('Save Shortcut');\n    $('.timestamp span').html('Code Saved!');\n    return false;\n  }\n\n  // (CMD or CTRL) + Shift + Up to get previous session\n  if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.which === 38) {\n    mixpanel.track('Previous Session Shortcut');\n    editor.loadPreviousSession();\n    return false;\n  }\n\n  // (CMD or CTRL) + Shift + Down to get next session\n  if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.which === 40) {\n    mixpanel.track('Next Session Shortcut');\n    editor.loadNextSession();\n    return false;\n  }\n});\n\n// TODO: Move to sidebar binding, but need to emit an event\n// that phpepl listens to and then calls process code\n$('.title button').click(processCode);\n\n// Remember the code in the editor before navigating away\n$(window).unload(function() {\n  editor.saveSession();\n});\n\n/**\n * Handles the sending of the code to the eval server\n */\nfunction processCode() {\n  var code = editor.getValue();\n\n  if (!code.length) {\n    console.setOutput('Please supply some code...');\n    return;\n  }\n\n  sidebar.shareCode(code);\n\n  console.toggleSpinner(true);\n\n  mixpanel.track('Code Run', {code: code});\n\n  editor.evaluateCode({evalURL: evalURL})\n    .done(processResponse)\n    .fail(processFatalError);\n}\n\n/**\n * @param  {Object} res\n * @param  {Object} res.error\n * @param  {String} res.result\n */\nfunction processResponse(res) {\n  if (!res) { return; }\n\n  editor.clearLineErrors();\n\n  if (!res.error) {\n    console.setOutput(res.result);\n    $('.timestamp span').html(timestamp());\n\n  } else {\n    console.setError(res.error);\n\n    if (res.error.line) {\n      editor.showLineError(res.error.line);\n    }\n  }\n\n  console.toggleSpinner(false);\n}\n\n/**\n * @param  {Object} error\n */\nfunction processFatalError(error) {\n  if (!error) { return; }\n\n  var textLine = getPrettyFatalErrorMessage(error.responseText);\n\n  console.setError({\n    message: textLine[0],\n    line: textLine[1]\n  });\n\n  console.toggleSpinner(false);\n  editor.showLineError(textLine[1]);\n\n  mixpanel.track('Error', {error: error.responseText});\n}\n\n},{\"./console\":1,\"./editor\":2,\"./lib/getPrettyFatalErrorMessage\":3,\"./lib/getQueryParams\":4,\"./lib/timestamp\":5,\"./lib/utils\":6,\"./sidebar\":9}],8:[function(require,module,exports){\n'use strict';\n\nfunction SessionStore() {\n  this._sessionLimit = 100;\n  this._dataKey = 'sessions';\n\n  this._sessions = this._getAllSessions();\n  this._currentSessionIndex = this._sessions.length - 1;\n}\n\n/**\n * Returns the last execution\n * @return {?String}\n */\nSessionStore.prototype.getLast = function() {\n  return this._sessions[this._sessions.length - 1];\n};\n\n/**\n * @param {String} code\n */\nSessionStore.prototype.save = function(code) {\n  // Don't store a just repeated session\n  if (code === this.getLast()) { return; }\n\n  this._sessions.push(code);\n\n  if (this._sessions.length > this._sessionLimit) {\n    this._sessions.shift();\n  }\n\n  this._currentSessionIndex = this._sessions.length - 1;\n  this._storeSessions();\n};\n\n/**\n * Get the previous session in the history\n * @return {String}\n */\nSessionStore.prototype.getPrevious = function() {\n  if (!this._sessions.length) { return ''; }\n\n  --this._currentSessionIndex;\n\n  if (this._currentSessionIndex < 0) {\n    this._currentSessionIndex = this._sessions.length - 1;\n  }\n\n  return this._sessions[this._currentSessionIndex];\n};\n\n/**\n * Get the next session in the history\n * @return {String}\n */\nSessionStore.prototype.getNext = function() {\n  if (!this._sessions.length) { return ''; }\n\n  ++this._currentSessionIndex;\n\n  if (this._currentSessionIndex === this._sessions.length) {\n    this._currentSessionIndex = 0;\n  }\n\n  return this._sessions[this._currentSessionIndex];\n};\n\n/**\n * @private\n */\nSessionStore.prototype._storeSessions = function() {\n  if (!window.localStorage) { return; }\n\n  // TODO: Maybe async this if it slows the UI\n  window.localStorage.setItem(this._dataKey, JSON.stringify(this._sessions));\n};\n\n/**\n * @private\n * @return {String[]}\n */\nSessionStore.prototype._getAllSessions = function() {\n  if (!window.localStorage) { return []; }\n\n  var sessions = window.localStorage.getItem(this._dataKey);\n  var legacySession;\n\n  if (!sessions || !sessions.length) {\n    legacySession = this._getLegacySession();\n\n    return legacySession ? [legacySession] : [];\n  }\n\n  try {\n    return JSON.parse(sessions);\n  } catch (e) {\n    return [];\n  }\n};\n\n/**\n * The old sessions used a 'code' key\n * @private\n * @return {?String}\n */\nSessionStore.prototype._getLegacySession = function() {\n  return window.localStorage.getItem('code');\n};\n\nmodule.exports = SessionStore;\n\n},{}],9:[function(require,module,exports){\nfunction Sidebar($container) {\n  this.$container = $container;\n  this.$share = this.$container.find('input.share');\n\n  this.$share.focus(function() {\n    window.mixpanel.track('Code Share');\n  });\n}\n\n/**\n * Set the share url\n * @param  {String} code\n */\nSidebar.prototype.shareCode = function(code) {\n  this.$share.val(this._getShareUrl(code));\n};\n\n/**\n * @private\n * @param  {String} code\n * @return {String}\n */\nSidebar.prototype._getShareUrl = function(code) {\n  var encoded = window.encodeURIComponent(code);\n  return window.location.origin + '?code=' + encoded;\n};\n\nmodule.exports = Sidebar;\n\n},{}]},{},[7]);\n",
 			"dist",
@@ -829,7 +820,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 362.0,
+	"side_bar_width": 242.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
