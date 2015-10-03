@@ -39,13 +39,8 @@ RUN mkdir -p /var/www/public
 ADD code /var/www/public
 WORKDIR /var/www/public
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer \
-    && composer install
-
-#	front-end dev
-#RUN apt-get install --yes git nodejs npm \
-#	&& npm install -g bower webpack \
-#	&& cd /var/www/public \
-#	&& bower install --save Polymer/polymer#^1.0.0
+    && composer install \
+    && composer update
 
 EXPOSE 80
 CMD ["/repl.sh"]
