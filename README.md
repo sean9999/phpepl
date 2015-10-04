@@ -11,7 +11,11 @@ Sandboxing should in the future use [Runkit_Sandbox](http://php.net/manual/en/ru
 
 ## Getting Started
 
+Clone the repo, boot up docker-machine, run the container.
+
 ```shell
+$ git clone https://github.com/sean9999/phpepl.git
+$ cd phpepl
 $ docker-machine start default # or whatever machine you want
 $ bash build.sh
 $ bash run.sh
