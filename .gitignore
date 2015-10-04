@@ -13,3 +13,4 @@ vendor/
 .vagrant
 .docker
 logz/
+*.sublime-*
