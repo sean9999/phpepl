@@ -2,4 +2,5 @@
 logz/
 .vagrant
 node_modules
+code/bower_components
 docker-php7-nightly-build
