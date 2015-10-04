@@ -1,4 +1,8 @@
 #!/bin/bash
-app_imagename="sean9999/phpepl"
-app_containername="phprepl"
 
+DIR="$(git rev-parse --show-toplevel)"
+imagebase="sean9999/phpepl"
+containerbase="phpepl"
+phpversion="$(docker run $imagebase php --version | head -n 1 | grep -o 'PHP\s\S\+' | grep -o '\S\+$')"
+imagename="$imagebase:$phpversion"
+containername="$containerbase-$phpversion"
